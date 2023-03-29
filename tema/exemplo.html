@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo HTML + PHP</title>
+</head>
+<body>
+    <h1> FORMULÁRIOS </h1>
+    <form name="form1" method="post" action="recebe_dados.php">
+        <br>
+        <label>Nome: </label>
+        <input type="text" name="nome">
+
+        <br>
+        <label>Bio: </label>
+        <textarea name="bio"></textarea>
+
+        <br>
+        <label>Curso: </label>
+        <select name="curso">
+            <option>escolha um curso...</option>
+            <option value="computacao">Ciência da Computação</option>
+            <option value="si">Sistemas de Informação</option>
+            <option value="das">Análise e Desenvolvimento de Sistemas</option>
+            <option value="eng">Engenharia de Computação</option>
+        </select>
+
+        <br>
+        <label>Sexo: </label>
+        <input type="radio" name="sexo" value="f"> Feminino
+        <input type="radio" name="sexo" value="m"> Masculino
+
+        <br>
+        <label>Data: </label>
+        <input type="date" name="data">
+
+        <br>
+        <label>Hora: </label>
+        <input type="time" name="hora">
+
+        <br>
+        <label>Idade: </label>
+        <input type="number" name="idade">
+
+        <br>
+        <label>Linguagens de Programação: </label>
+        <br>
+        <input type="checkbox" name="lp[]" value="cpp"> C++
+        <br>
+        <input type="checkbox" name="lp[]" value="java"> Java
+        <br>
+        <input type="checkbox" name="lp[]" value="js"> JavaScript
+        <br>
+        <input type="checkbox" name="lp[]" value="php"> PHP
+
+        <br>
+        <input type="submit" name="enviar" value="Enviar">        
+    </form>
+</body>
+</html>
